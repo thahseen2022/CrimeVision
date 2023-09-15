@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Bar</title>
+	<style type="text/css" >
+
+		body {
+		background-color: rgb(163, 170, 173);
+		}
+
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: rgb(122, 123, 120); font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 20px
+		}
+		
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.column {
+			flex: 1;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		
+		.column img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		
+		@media (max-width: 768px) {
+			.column {
+				flex-basis: 100%;
+			}
+		}
+
+		button a{
+			color: rgb(255, 255, 255); font-weight: bold; font-size: 15px;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Crime Classification</a> </div>
+			<ul>
+				<button><a href="home.html">Home</a></button>
+				
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="column">
+		  <img src="https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg" alt="Image">
+		</div>
+		<div class="column">
+		  <h2 >Stop Crime</h2>
+		  <p>Drop the Image to get the prediction</p>
+		  
+		  <form action="upload.php" method="post" enctype="multipart/form-data">
+			Select image to upload:
+			<input type="file" name="fileToUpload" id="fileToUpload">
+			<input type="submit" value="Upload Image" name="submit">
+		  </form>
+		  
+		  
+		</div>
+	  </div>
+
+</body>
+</html>
